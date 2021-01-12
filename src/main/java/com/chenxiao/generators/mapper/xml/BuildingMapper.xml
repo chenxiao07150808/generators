@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenxiao.generators.mapper.BuildingMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.chenxiao.generators.entity.Building">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="village_id" property="villageId" />
+        <result column="max_floor_number" property="maxFloorNumber" />
+        <result column="remark" property="remark" />
+        <result column="is_deleted" property="isDeleted" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+        <result column="updated_by" property="updatedBy" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, village_id, max_floor_number, remark, is_deleted, created_at, updated_at, updated_by
+    </sql>
+
+</mapper>

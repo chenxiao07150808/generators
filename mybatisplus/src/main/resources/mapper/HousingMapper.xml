@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mybatisP.mapper.HousingMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.mybatisP.entity.Housing">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="village_id" property="villageId" />
+        <result column="village_name" property="villageName" />
+        <result column="building_id" property="buildingId" />
+        <result column="building_name" property="buildingName" />
+        <result column="house_type_id" property="houseTypeId" />
+        <result column="house_type_name" property="houseTypeName" />
+        <result column="floor_number" property="floorNumber" />
+        <result column="house_number" property="houseNumber" />
+        <result column="area" property="area" />
+        <result column="price_monthly" property="priceMonthly" />
+        <result column="province_name" property="provinceName" />
+        <result column="city_name" property="cityName" />
+        <result column="area_name" property="areaName" />
+        <result column="is_deleted" property="isDeleted" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+        <result column="updated_by" property="updatedBy" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, village_id, village_name, building_id, building_name, house_type_id, house_type_name, floor_number, house_number, area, price_monthly, province_name, city_name, area_name, is_deleted, created_at, updated_at, updated_by
+    </sql>
+
+</mapper>

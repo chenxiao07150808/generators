@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mybatisP.mapper.DialsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.mybatisP.entity.Dials">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="charge_name" property="chargeName" />
+        <result column="unit_price" property="unitPrice" />
+        <result column="unit" property="unit" />
+        <result column="remark" property="remark" />
+        <result column="status" property="status" />
+        <result column="is_deleted" property="isDeleted" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+        <result column="created_by" property="createdBy" />
+        <result column="updated_by" property="updatedBy" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, charge_name, unit_price, unit, remark, status, is_deleted, created_at, updated_at, created_by, updated_by
+    </sql>
+
+</mapper>
